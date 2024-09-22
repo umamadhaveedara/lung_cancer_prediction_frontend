@@ -145,7 +145,6 @@
   height: 100%;
   padding: 2em;
   /* border: 2px solid red; */
-  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -156,34 +155,70 @@
   padding: 2em;
   border-radius: 8px;
 }
-.formheading{
+.formheading {
   /* border: 2px solid red; */
   display: flex;
   align-items: center;
   margin-bottom: 1em;
 }
-.forminputs{
+.forminputs {
   /* border: 2px solid red; */
-  height: 85%;
-  width: 45%;
+  height: 74%;
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   /* justify-content: space-between; */
 }
-.forminputs div{
+.boxtwo {
+  width: 40%;
+  margin-left: 20px;
+}
+.boxone {
+  width: 40%;
+}
+.submitbuttonview {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.submitBtn {
+  padding: 0.6em 1.2em;
+  border: none;
+  outline: none;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: 500;
+}
+.previewimage {
+  padding-top: 10px;
+  width: 100%;
+  height: auto;
+  /* display: none; */
+}
+.submitBtn:hover {
+  background-color: #dbcdf89a;
+}
+.recenthistory {
+  height: 90%;
+  overflow-y: scroll;
+}
+.forminputs div {
   width: 100%;
   /* border: 2px solid pink; */
 }
-.forminputs input[type="text"],input[type="number"]{
+.forminputs input[type="text"],
+input[type="number"] {
   width: 100% !important;
   padding: 0.3em;
 }
-.forminputs select,textarea{
+.forminputs select,
+textarea {
   width: 100% !important;
   padding: 0.3em;
 }
 
-.formicon{
+.formicon {
   width: 40px;
   height: 40px;
   display: flex;
@@ -192,7 +227,7 @@
   border-radius: 8px;
   background-color: #dbcdf89a;
 }
-.formheading h5{
+.formheading h5 {
   margin-bottom: 0em !important;
   font-size: medium;
   color: #856bb8;
@@ -204,11 +239,13 @@
   height: 100%;
   /* border: 2px solid red; */
   padding: 1em;
+  flex-direction: column;
 }
 .userinfo {
-  /* width: 80%; */
+  width: 80%;
+  border: 2px solid red;
   height: 10%;
-  display: flex;
+  display: none;
   justify-content: space-between;
   padding: 0.1em 1em;
   align-items: center;
@@ -216,9 +253,25 @@
   margin-bottom: 1em;
   background-color: #fff;
 }
+.loaderdisplay{
+  z-index: 99;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #eae5f4cc;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
 .usermaindata {
-  border: 2px solid red;
-  height: 85%;
+  height: 75%;
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .userinfo h6 {
   margin-bottom: 0em !important;
@@ -232,6 +285,14 @@
   flex-direction: column;
 }
 .addappoinementbtn {
+  padding: 0.8em 1.2em;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #856bb8;
+}
+.addNewappoinementbtn {
   padding: 0.8em 1.2em;
   border: none;
   border-radius: 8px;
@@ -264,4 +325,43 @@
   background-color: #dbcdf89a;
   border-radius: 8px;
   cursor: pointer;
+}
+/* From Uiverse.io by bociKond */ 
+.loader {
+  width: 44.8px;
+  height: 44.8px;
+  color: #856bb8;
+  position: relative;
+  background: radial-gradient(11.2px,currentColor 94%,#0000);
+}
+
+.loader:before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: radial-gradient(10.08px at bottom right,#0000 94%,currentColor) top    left,
+          radial-gradient(10.08px at bottom left ,#0000 94%,currentColor) top    right,
+          radial-gradient(10.08px at top    right,#0000 94%,currentColor) bottom left,
+          radial-gradient(10.08px at top    left ,#0000 94%,currentColor) bottom right;
+  background-size: 22.4px 22.4px;
+  background-repeat: no-repeat;
+  animation: loader 1.5s infinite cubic-bezier(0.3,1,0,1);
+}
+
+@keyframes loader {
+  33% {
+    inset: -11.2px;
+    transform: rotate(0deg);
+  }
+
+  66% {
+    inset: -11.2px;
+    transform: rotate(90deg);
+  }
+
+  100% {
+    inset: 0;
+    transform: rotate(90deg);
+  }
 }

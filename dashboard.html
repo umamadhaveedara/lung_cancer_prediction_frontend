@@ -102,173 +102,10 @@
               />
             </svg>
           </div>
-          <div class="recenthistory">
-            <div
-              class="history"
-              style="
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-              "
-            >
-              <div class="avatar" style="width: 10%">
-                <div
-                  style="
-                    width: 70px;
-                    height: 70px;
-                    border-radius: 100px;
-                    background-color: #cac9c9;
-                    display: flex;
-                    color: rgba(0, 0, 0, 0.648);
-                    justify-content: center;
-                    align-items: center;
-                  "
-                >
-                  <div style="font-weight: 600; font-size: xx-large">A</div>
-                </div>
-              </div>
-              <div
-                class="avatardata"
-                style="
-                  width: 80%;
-                  display: flex;
-                  flex-direction: column;
-                  justify-content: center;
-                  align-items: flex-start;
-                  padding-left: 30px;
-                "
-              >
-                <h6>Name:Anusha</h6>
-                <h6>Age:34</h6>
-                <h6>Gender:Female</h6>
-              </div>
-            </div>
-            <div
-              class="history"
-              style="
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-              "
-            >
-              <div class="avatar" style="width: 10%">
-                <div
-                  style="
-                    width: 70px;
-                    height: 70px;
-                    border-radius: 100px;
-                    background-color: #cac9c9;
-                    display: flex;
-                    color: rgba(0, 0, 0, 0.648);
-                    justify-content: center;
-                    align-items: center;
-                  "
-                >
-                  <div style="font-weight: 600; font-size: xx-large">J</div>
-                </div>
-              </div>
-              <div
-                class="avatardata"
-                style="
-                  width: 80%;
-                  display: flex;
-                  flex-direction: column;
-                  justify-content: center;
-                  align-items: flex-start;
-                  padding-left: 30px;
-                "
-              >
-                <h6>Name: John</h6>
-                <h6>Age: 28</h6>
-                <h6>Gender: Male</h6>
-              </div>
-            </div>
-
-            <div
-              class="history"
-              style="
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-              "
-            >
-              <div class="avatar" style="width: 10%">
-                <div
-                  style="
-                    width: 70px;
-                    height: 70px;
-                    border-radius: 100px;
-                    background-color: #cac9c9;
-                    display: flex;
-                    color: rgba(0, 0, 0, 0.648);
-                    justify-content: center;
-                    align-items: center;
-                  "
-                >
-                  <div style="font-weight: 600; font-size: xx-large">B</div>
-                </div>
-              </div>
-              <div
-                class="avatardata"
-                style="
-                  width: 80%;
-                  display: flex;
-                  flex-direction: column;
-                  justify-content: center;
-                  align-items: flex-start;
-                  padding-left: 30px;
-                "
-              >
-                <h6>Name: Bella</h6>
-                <h6>Age: 25</h6>
-                <h6>Gender: Female</h6>
-              </div>
-            </div>
-
-            <div
-              class="history"
-              style="
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-              "
-            >
-              <div class="avatar" style="width: 10%">
-                <div
-                  style="
-                    width: 70px;
-                    height: 70px;
-                    border-radius: 100px;
-                    background-color: #cac9c9;
-                    display: flex;
-                    color: rgba(0, 0, 0, 0.648);
-                    justify-content: center;
-                    align-items: center;
-                  "
-                >
-                  <div style="font-weight: 600; font-size: xx-large">C</div>
-                </div>
-              </div>
-              <div
-                class="avatardata"
-                style="
-                  width: 80%;
-                  display: flex;
-                  flex-direction: column;
-                  justify-content: center;
-                  align-items: flex-start;
-                  padding-left: 30px;
-                "
-              >
-                <h6>Name: Carlos</h6>
-                <h6>Age: 31</h6>
-                <h6>Gender: Male</h6>
-              </div>
-            </div>
-          </div>
+          <div class="recenthistory"></div>
         </div>
         <div class="inputdiv">
-          <!-- <div class="addappoinement">
+          <div class="addappoinement">
             <h5>Want to book an appionment with doctor?</h5>
             <button class="addappoinementbtn">
               <span
@@ -284,79 +121,371 @@
                   /></svg></span
               >Add Appionment
             </button>
-          </div> -->
-          <!-- <div class="userdata">
-            <div class="userinfo">
-              <h6>Name: Ausha</h6>
-              <h6>Age: 34</h6>
-              <h6>Gender: Female</h6>
-              <h6>Phone Number: 8976543456</h6>
+          </div>
+
+          <div class="userdata" id="userdata" style="display: none">
+            <div
+              style="
+                display: flex;
+                justify-content: flex-end;
+                padding-bottom: 20px;
+              "
+            >
+              <button class="addNewappoinementbtn" id="addNewappoinementbtn">
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25px"
+                    height="25px"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="#FFF"
+                      d="M19 12.998h-6v6h-2v-6H5v-2h6v-6h2v6h6z"
+                    /></svg></span
+                >Add New Appionment
+              </button>
             </div>
             <div class="usermaindata">
+              <div>
+                <h6>Name: Ausha</h6>
+                <h6>Age: 34</h6>
+                <h6>Gender: Female</h6>
 
+                <p>Uploaded image:</p>
+                <img src="" alt="" srcset="" width="250px" height="250px" />
+              </div>
+              <div>
+                <h5
+                  style="color: #856bb8; font-weight: 600; margin-bottom: 30px"
+                >
+                  Predicted Cancer Name: kjhk
+                </h5>
+                <h5>Precautions Need to be:</h5>
+                <ul>
+                  <li>Avoid smoking and exposure to secondhand smoke.</li>
+                  <li>
+                    Maintain a healthy diet rich in fruits and vegetables.
+                  </li>
+                  <li>Exercise regularly to strengthen lung function.</li>
+                  <li>
+                    Avoid exposure to carcinogens like asbestos and radon.
+                  </li>
+                  <li>
+                    Get regular checkups and screenings, especially if at high
+                    risk.
+                  </li>
+                  <li>Limit alcohol consumption.</li>
+                  <li>
+                    Follow workplace safety guidelines to avoid harmful chemical
+                    exposure.
+                  </li>
+                  <li>
+                    Practice deep breathing exercises to improve lung capacity.
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div> -->
-          <div class="userinputpopup">
+          </div>
+
+          <div class="userinputpopup" id="userinputpopup" style="display: none">
             <div class="formdata">
               <div class="formheading">
-                <span class="formicon"><svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 24 24"><path fill="#856bb8" d="M12 4a4 4 0 0 1 4 4a4 4 0 0 1-4 4a4 4 0 0 1-4-4a4 4 0 0 1 4-4m0 2a2 2 0 0 0-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2m0 7c2.67 0 8 1.33 8 4v3H4v-3c0-2.67 5.33-4 8-4m0 1.9c-2.97 0-6.1 1.46-6.1 2.1v1.1h12.2V17c0-.64-3.13-2.1-6.1-2.1"/></svg></span>
+                <span class="formicon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25px"
+                    height="25px"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="#856bb8"
+                      d="M12 4a4 4 0 0 1 4 4a4 4 0 0 1-4 4a4 4 0 0 1-4-4a4 4 0 0 1 4-4m0 2a2 2 0 0 0-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2m0 7c2.67 0 8 1.33 8 4v3H4v-3c0-2.67 5.33-4 8-4m0 1.9c-2.97 0-6.1 1.46-6.1 2.1v1.1h12.2V17c0-.64-3.13-2.1-6.1-2.1"
+                    />
+                  </svg>
+                </span>
                 <h5>Add User details</h5>
               </div>
               <div class="forminputs">
                 <div class="boxone">
-                <div><label for="">Name:</label>
-                  <br>
-                  <input
-                  type="text"
-                  name=""
-                  id=""
-                  style="margin-bottom: 1em"
-                  placeholder="Enter Name"
-                /></div>
-                <div><label for="">Age:</label>
-                 <br>
-                  <input
-                  type="text"
-                  name=""
-                  id=""
-                  style="margin-bottom: 1em"
-                  placeholder="Enter Age"
-                /></div>
-                <div style="margin-bottom: 1em;"><label for="">Gender:</label>
-                  <br>
-                  <select name="cars" id="cars">
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
-                    <option value="Other">Other</option>
-                  </select></div>
-
+                  <div>
+                    <label for="">Name:</label>
+                    <br />
+                    <input
+                      type="text"
+                      name=""
+                      id=""
+                      style="margin-bottom: 1em"
+                      placeholder="Enter Name"
+                    />
+                  </div>
+                  <div>
+                    <label for="">Age:</label>
+                    <br />
+                    <input
+                      type="text"
+                      name=""
+                      id=""
+                      style="margin-bottom: 1em"
+                      placeholder="Enter Age"
+                    />
+                  </div>
+                  <div style="margin-bottom: 1em">
+                    <label for="">Gender:</label>
+                    <br />
+                    <select name="gender" id="gender">
+                      <option value="Male">Male</option>
+                      <option value="Female">Female</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
                 </div>
-                <div><label for="">Phone Number:</label>
-                  <br>
-                  <input
-                  type="number"
-                  name=""
-                  id=""
-                  style="margin-bottom: 1em"
-                  placeholder="Enter Mobile Number"
-                /></div>
-                <div><label for="">Any Quires:</label>
-                  <br>
-                  <textarea id="w3review" name="w3review" rows="2" cols="30">If any quires add here...</textarea></div>
-                
+                <div class="boxtwo">
+                  <div>
+                    <label for="file-upload">Choose a file:</label>
+                    <input type="file" id="file-upload" name="file-upload" />
+                  </div>
+                  <div class="previewimage">
+                    <img
+                      src=""
+                      alt=""
+                      srcset=""
+                      width="200px"
+                      height="200px"
+                      id="preview"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="submitbuttonview">
+                <button class="submitBtn">Submit</button>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="loaderdisplay" id="loaderdisplay">
+        <div class="loader"></div>
+      </div>
     </div>
     <script>
+      const addappoinement = document.getElementsByClassName("addappoinement");
+      const addappoinementbtn =
+        document.getElementsByClassName("addappoinementbtn");
+      const userinputpopup = document.getElementById("userinputpopup");
+      const addNewappoinementbtn = document.getElementById(
+        "addNewappoinementbtn"
+      );
+      const loaderdisplay = document.getElementById("loaderdisplay");
+
+      const userdata = document.getElementById("userdata");
+
+      addappoinementbtn[0].addEventListener("click", () => {
+        addappoinement[0].style.display = "none";
+        userdata.style.display = "none";
+        userinputpopup.style.display = "flex";
+      });
+      addNewappoinementbtn.addEventListener("click", () => {
+        console.log("Button clicked");
+        addappoinement.style.display = "none";
+        userdata.style.display = "none";
+        userinputpopup.style.display = "flex";
+      });
+
+      function handelPatientData(patientData) {
+        console.log(patientData, "hereee");
+        document.getElementById("userdata").innerHTML = `
+  <div
+    style="
+      display: flex;
+      justify-content: flex-end;
+      padding-bottom: 20px;
+    "
+  >
+    <button class="addNewappoinementbtn">
+      <span
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="25px"
+          height="25px"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="#FFF"
+            d="M19 12.998h-6v6h-2v-6H5v-2h6v-6h2v6h6z"
+          /></svg></span
+      >Add New Appointment
+    </button>
+  </div>
+  <div class="usermaindata">
+    <div>
+      <h6>Name: ${patientData.patient_name}</h6>
+      <h6>Age: ${patientData.patient_age}</h6>
+      <h6>Gender: ${patientData.patient_gender}</h6>
+      <p>Uploaded image:</p>
+      <img src="data:image/jpeg;base64,${patientData.ct_image_base64}" alt="Uploaded Image" width="250px" height="250px" />
+      
+    </div>
+    <div>
+      <h5
+        style="color: #856bb8; font-weight: 600; margin-bottom: 30px"
+      >
+        Predicted Cancer Name: ${patientData.prediction_result}
+      </h5>
+      <h5>Precautions Need to be:</h5>
+      <ul>
+        <li>Avoid smoking and exposure to secondhand smoke.</li>
+        <li>Maintain a healthy diet rich in fruits and vegetables.</li>
+        <li>Exercise regularly to strengthen lung function.</li>
+        <li>Avoid exposure to carcinogens like asbestos and radon.</li>
+        <li>Get regular checkups and screenings, especially if at high risk.</li>
+        <li>Limit alcohol consumption.</li>
+        <li>Follow workplace safety guidelines to avoid harmful chemical exposure.</li>
+        <li>Practice deep breathing exercises to improve lung capacity.</li>
+      </ul>
+    </div>
+  </div>
+`;
+      }
+
+      function handleViewReport(index) {
+        addappoinement[0].style.display = "none";
+        userdata.style.display = "flex";
+        userinputpopup.style.display = "none";
+        handelPatientData(patientData[index]);
+      }
+
+      // Use DOMContentLoaded to ensure the script runs when the HTML DOM is ready
+      document.addEventListener("DOMContentLoaded", function () {
+        const userId = localStorage.getItem("user_id");
+
+        if (userId) {
+          fetch(`http://127.0.0.1:1000/getAllData/${userId}`)
+            .then((response) => response.json())
+            .then((data) => {
+              console.log("API response:", data);
+              patientData = data.patients;
+              appendHistory(patientData);
+              console.log(patientData, "kkkkkk");
+            })
+            .catch((error) => {
+              console.error("Error calling API:", error);
+            });
+        } else {
+          console.log("No user_id found in localStorage.");
+        }
+      });
+
       const logoutbtn = document.getElementById("logoutbtn");
       logoutbtn.addEventListener("click", () => {
         console.log("hjgfhjkl;");
         window.location.href = "index.html";
       });
+
+      let patientData = [];
+
+      document
+        .getElementById("file-upload")
+        .addEventListener("change", function (event) {
+          const file = event.target.files[0];
+          if (file) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+              const base64String = e.target.result;
+              document.getElementsByClassName("previewimage");
+              document.getElementById("preview").src = base64String;
+            };
+            reader.readAsDataURL(file);
+          }
+        });
+
+      document
+        .querySelector(".submitBtn")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          loaderdisplay.style.display = "flex";
+          // Create a new FormData object
+          const formData = new FormData();
+
+          // Get the form inputs
+          const name = document.querySelector(
+            'input[placeholder="Enter Name"]'
+          ).value;
+          const age = document.querySelector(
+            'input[placeholder="Enter Age"]'
+          ).value;
+          const gender = document.querySelector("#gender").value;
+          const fileInput = document.querySelector("#file-upload");
+          const file = fileInput.files[0]; // Get the selected file
+
+          // Append the form data
+          formData.append("user_id", localStorage.getItem("user_id"));
+          formData.append("patient_name", name);
+          formData.append("patient_age", age);
+          formData.append("patient_gender", gender);
+          if (file) {
+            formData.append("patient_ct_image", file);
+          }
+
+          // Preview the selected image (optional)
+          const reader = new FileReader();
+          reader.onload = function (e) {
+            document.getElementById("preview").src = e.target.result;
+          };
+          if (file) {
+            reader.readAsDataURL(file);
+          }
+
+          // Send the form data to the API using fetch
+          fetch("http://127.0.0.1:1000/lungpredict", {
+            method: "POST",
+            body: formData,
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              console.log("Success:", data);
+              // patientData.push(data.patients[0]);
+              console.log(patientData, "jhjj");
+              location.reload();
+              loaderdisplay.style.display = "none";
+            })
+            .catch((error) => {
+              console.error("Error:", error);
+            });
+        });
+
+      function appendHistory(data) {
+        const recentHistoryDiv = document.querySelector(".recenthistory");
+
+        if (data.length === 0) {
+          recentHistoryDiv.insertAdjacentHTML(
+            "beforeend",
+            "<p>No reports.</p>"
+          );
+        } else {
+          data.forEach((patient, index) => {
+            const htmlString = `
+          <div onclick="handleViewReport(${index})" class="history" style="display: flex; justify-content: space-around; align-items: center;">
+            <div class="avatar" style="width: 10%">
+              <div style="width: 70px; height: 70px; border-radius: 100px; background-color: #cac9c9; display: flex; color: rgba(0, 0, 0, 0.648); justify-content: center; align-items: center;">
+                <div style="font-weight: 600; font-size: xx-large">${patient.patient_name
+                  .charAt(0)
+                  .toUpperCase()}</div>
+              </div>
+            </div>
+            <div class="avatardata" style="width: 80%; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding-left: 30px;">
+              <h6>Name: ${patient.patient_name}</h6>
+              <h6>Age: ${patient.patient_age}</h6>
+              <h6>Gender: ${patient.patient_gender}</h6>
+            </div>
+          </div>`;
+
+            recentHistoryDiv.insertAdjacentHTML("beforeend", htmlString);
+          });
+        }
+      }
     </script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
